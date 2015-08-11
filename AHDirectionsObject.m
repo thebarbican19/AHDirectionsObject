@@ -7,7 +7,11 @@
 //
 
 #import "AHDirectionsObject.h"
-#import "AHConstants.h"
+
+#define DIRECTIONS_GOOGLE_PROTOCOL @"comgooglemaps://"
+#define DIRECTIONS_CITYMAPPER_PROTOCOL @"citymapper://"
+#define DIRECTIONS_WAZE_PROTOCOL @"waze://"
+#define DIRECTIONS_APPLE_PROTOCOL @"http://maps.apple.com/maps?"
 
 @implementation AHDirectionsObject
 
