@@ -16,7 +16,6 @@
 @implementation AHDirectionsObject
 
 -(void)directionsHandle:(CLLocation *)location type:(NSString *)type {
-    userData = [[NSUserDefaults alloc] initWithSuiteName:APP_SAVE_DIRECTORY];
     if (type == nil) [self directionsAppleMaps:location];
     else if ([type isEqualToString:@"citymapper"]) [self directionsCitymapper:location];
     else if ([type isEqualToString:@"google"]) [self directionsGoogleMaps:location];
